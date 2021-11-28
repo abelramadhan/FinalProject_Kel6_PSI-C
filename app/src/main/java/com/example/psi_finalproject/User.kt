@@ -1,6 +1,10 @@
 package com.example.psi_finalproject
 
-data class User(var username:String, var email:String, var pPicture_url:String) {
+data class User(
+    var username:String="",
+    var email:String="",
+    var pPicture_url:String=""
+    ) {
 
     fun User() {
 
