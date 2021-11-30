@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    </RelativeLayout>
     <ProgressBar
         android:id="@+id/progressBar"
         android:indeterminateTint="@color/red"
@@ -16,7 +21,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -172,7 +177,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
