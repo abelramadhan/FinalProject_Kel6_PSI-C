@@ -116,8 +116,4 @@ class ViewModel: ViewModel() {
         database.getReference("products").addValueEventListener(listener)
     }
 
-    /*fun addOrder(order:Orders) {
-        database.getReference("title").equalTo(order.ti)
-    }*/
-
 }

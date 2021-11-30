@@ -1,6 +1,5 @@
 package com.example.psi_finalproject
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +8,12 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 
-class OrderAdapter(context: Context, var order: List<Orders>) :
-    RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
+class CartAdapter(fragment: CartFragment, var order: List<Orders>) :
+    RecyclerView.Adapter<CartAdapter.OrderViewHolder>() {
     inner class OrderViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView)
-        val mContext = context
+        val mContext = fragment
         val imageRef = FirebaseDatabase.getInstance().getReference("products")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.order_items, parent, false)

@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isGone
@@ -33,8 +34,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var cart: LinearLayout
     private lateinit var cart_count: TextView
-    private lateinit var viewmodel: ViewModel
     private lateinit var sharedpref: SharedPreferences
+    lateinit var viewmodel: ViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,6 +82,11 @@ class HomeActivity : AppCompatActivity() {
                 addToBackStack(null)
                 commit()
             }
+        }
+
+        avatar.setOnClickListener {
+            intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
         viewmodel.cart_count.observe(this, Observer {
@@ -138,8 +144,13 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onStop() {
+        Log.d("HomeActivityDebug", "onStop()")
         super.onStop()
         setPreference()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
         viewmodel.cart_sub.dispose()
     }
 }

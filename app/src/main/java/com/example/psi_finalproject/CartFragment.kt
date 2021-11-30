@@ -8,10 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import io.reactivex.rxjava3.kotlin.subscribeBy
 
 class CartFragment : Fragment() {
 
@@ -33,7 +31,7 @@ class CartFragment : Fragment() {
 
         (activity as HomeActivity?)!!.getViewModel().also { viewmodel = it }
         val cart_list = viewmodel.getCartList()
-        RCview.adapter = OrderAdapter(this, cart_list)
+        RCview.adapter = CartAdapter(this, cart_list)
         RCview.layoutManager = LinearLayoutManager(activity)
 
         backBtn.setOnClickListener {
@@ -47,7 +45,7 @@ class CartFragment : Fragment() {
 
         clear_btn.setOnClickListener {
             val cart_list = viewmodel.getCartList()
-            RCview.adapter = OrderAdapter(this, cart_list)
+            RCview.adapter = CartAdapter(this, cart_list)
             RCview.layoutManager = LinearLayoutManager(activity)
             viewmodel.clearList()
             (activity as HomeActivity?)!!.setPreference()

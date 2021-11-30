@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
         var database = Firebase.database
         supportActionBar?.hide()
 
-
-
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
             if (auth.currentUser != null) {
