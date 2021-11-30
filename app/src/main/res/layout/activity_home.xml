@@ -47,14 +47,35 @@
                     android:layout_weight="1"
                     app:srcCompat="@drawable/baseline_menu_black_24dp" />
 
-                <ImageView
+                <LinearLayout
                     android:id="@+id/cart"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="15dp"
-                    android:layout_toLeftOf="@+id/avatar_card"
-                    app:srcCompat="@drawable/baseline_shopping_cart_black_24dp" />
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/avatar_card">
+
+                    <TextView
+                        android:id="@+id/cart_count"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/circlebg"
+                        android:textSize="18sp"
+                        android:text="0"/>
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        app:srcCompat="@drawable/baseline_shopping_cart_black_24dp"/>
+
+                </LinearLayout>
+
+
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/avatar_card"
@@ -143,4 +164,15 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

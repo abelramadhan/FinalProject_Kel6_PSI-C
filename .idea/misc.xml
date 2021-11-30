@@ -3,26 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/baseline_arrow_back_black_24dp.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/baseline_person_black_24dp.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/baseline_settings_black_36dp.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/baseline_shopping_cart_white_24dp.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/bg_merah.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/bg_white.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/ic_splash.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/logo.xml" value="0.240625" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/logout.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/drawable/profile_image.xml" value="0.23692307692307693" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/layout/activity_main.xml" value="0.10916919959473151" />
-        <entry key="..\:/.DATA GUE/Kuliah/SEMESTER 5/PSI/Kodingan/ProjectAkhir/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/drawable/baseline_alternate_email_black_24dp.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/drawable/baseline_menu_black_24dp.xml" value="0.37864583333333335" />
-        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/drawable/circlebg.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/drawable/corner.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/drawable/radiobutton.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/drawable/rounded.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/activity_login.xml" value="0.3625" />
         <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/activity_register.xml" value="0.3197278911564626" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/fragment_cart.xml" value="0.3083832335329341" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/fragment_product.xml" value="0.33" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/fragment_product_list.xml" value="0.203125" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/order_items.xml" value="0.33" />
+        <entry key="..\:/Users/abelramadhan/Documents/semester 5/PSI Project/PSI_FinalProject/app/src/main/res/layout/product_items.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -1,6 +1,7 @@
 package com.example.psi_finalproject
 
 data class Product(
+    var id:String="",
     var title:String="",
     var designer:String="",
     var price:String="",
@@ -10,7 +11,8 @@ data class Product(
 
     }
 
-    fun Product(title: String, designer: String, price: String, pic_url: String) {
+    fun Product(id: String, title: String, designer: String, price: String, pic_url: String) {
+        this.id = id
         this.title = title
         this.designer = designer
         this.price = price
