@@ -54,9 +54,6 @@ class ViewModel: ViewModel() {
             )
 
     fun addToCart(orders: Orders) {
-        /*++count
-        cart_count.value = count.toString()
-        Log.d("viewmodelOBS", "val = ${cart_count.value}")*/
         cart_obs.onNext(orders)
     }
 

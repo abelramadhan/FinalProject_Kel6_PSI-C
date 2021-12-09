@@ -47,14 +47,18 @@ class ProductFragment : Fragment() {
         Glide.with(this).load(bundle!!.getString("pic_url")).into(image)
 
         order_btn.setOnClickListener {
-            val selectedId = size_RDgroup.checkedRadioButtonId
-            val radioButton:RadioButton = view.findViewById<View>(selectedId) as RadioButton
-            size = radioButton.text.toString()
-            val currentTime: String = SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(Date())
-            val order = Orders(id, title_val, size, currentTime)
-            (activity as HomeActivity?)!!.addCart(order)
-            Toast.makeText(activity, "added to cart", Toast.LENGTH_SHORT).show()
-            requireActivity().onBackPressed()
+            val selectedId = size_RDgroup!!.checkedRadioButtonId
+            if (selectedId!=-1) {
+                val radioButton:RadioButton = view.findViewById<View>(selectedId) as RadioButton
+                size = radioButton.text.toString()
+                val currentTime: String = SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(Date())
+                val order = Orders(id, title_val, size, currentTime)
+                (activity as HomeActivity?)!!.addCart(order)
+                Toast.makeText(activity, "added to cart", Toast.LENGTH_SHORT).show()
+                requireActivity().onBackPressed()
+            } else {
+                Toast.makeText(activity, "no size selected", Toast.LENGTH_SHORT).show()
+            }
         }
 
         cancel_btn.setOnClickListener {
